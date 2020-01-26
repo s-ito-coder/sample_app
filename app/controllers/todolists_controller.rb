@@ -21,6 +21,13 @@ class TodolistsController < ApplicationController
         @list = List.find(params[:id])
     end
 
+    def edit
+        @list = List.find(params[:id])
+    end
+
+    def update
+    end
+
     private
 
     def list_params
